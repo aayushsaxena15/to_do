@@ -1,0 +1,16 @@
+# Routes
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+
+# Task resource routes
+GET     /task                        controllers.TaskController.all
+GET     /task/todo                   controllers.TaskController.todo
+GET     /task/completed              controllers.TaskController.completed
+GET     /task/:id                    controllers.TaskController.get(id: Integer)
+POST    /task                        controllers.TaskController.put
+POST    /task/complete/:id           controllers.TaskController.complete(id: Integer)
+DELETE  /task/:id                    controllers.TaskController.delete(id: Integer)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
