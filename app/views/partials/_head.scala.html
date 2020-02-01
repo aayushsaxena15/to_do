@@ -1,0 +1,12 @@
+@(title: String)
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @*<meta name="_csrf" content="@play.filters.csrf.CSRF.getToken.map(_.value).getOrElse("None")" />*@
+    <title>@title</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="@controllers.routes.Assets.versioned("lib/bootstrap/css/bootstrap.min.css")" rel="stylesheet">
+    <!-- Main -->
+    <link rel="stylesheet" type="text/css" href="@controllers.routes.Assets.versioned("style/main.css")"/>
+</head>
