@@ -1,0 +1,61 @@
+
+body {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.container {
+    width: 100%;
+}
+
+.float-right {
+    float: right;
+}
+
+
+.header {
+    margin: 25px 0;
+    padding-bottom: 1rem;
+    border-bottom: .05rem solid #e5e5e5;
+}
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 3rem;
+}
+.padFix{
+    padding-top:8px;
+}
+
+#new-close {
+    display: none;
+}
+
+
+.footer {
+    padding-top: 1.5rem;
+    color: #777;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.task {
+    cursor: pointer;
+}
+.task-text {
+    font-size: 20px;
+    color: #444;
+}
+.completed .task-text {
+    text-decoration: line-through;
+}
+.date {
+    font-size: 12px;
+    color: #BBB;
+    text-decoration: none;
+}
+#tasks tr:first-child .up{
+    display: none;
+}
+#tasks tr:last-child .down{
+    display: none;
+}
